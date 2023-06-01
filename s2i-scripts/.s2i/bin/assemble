@@ -10,6 +10,12 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
+cp -Rf /tmp/src/*html ./
+echo "Files copied"
+
+DATE=date "+%Y %m %d %T"
+echo "Page built on $DATE" >> ./info.html
+echo "Generated info.html"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
