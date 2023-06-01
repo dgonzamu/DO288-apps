@@ -13,7 +13,7 @@ config_s2i
 cp -Rf /tmp/src/*html ./
 echo "Files copied"
 
-DATE=date "+%Y %m %d %T"
+DATE=`date "+%Y %m %d %T"`
 echo "Page built on $DATE" >> ./info.html
 echo "Generated info.html"
 
