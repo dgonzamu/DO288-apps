@@ -9,7 +9,7 @@ echo "---> Enabling s2i support in httpd24 image"
 config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
-cp -RF /tmp/src/*.html ./;
+cp -Rf /tmp/src/*.html ./;
 DATE=`date "+%Y %M %d %T"`;
 echo "Page built on $DATE" > info.html
 
